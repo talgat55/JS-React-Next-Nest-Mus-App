@@ -49,7 +49,7 @@ export class TrackService {
 
     async listen(id: ObjectId) {
         const track = await  this.trackModel.findById(id);
-        track.listen +=1;
+        track.listens +=1;
         track.save();
     }
 }
